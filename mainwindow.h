@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 #include <QGraphicsScene>
+#include <QGraphicsItem>
+#include <QKeyEvent>
+#include <QDebug>
 
 namespace Ui {
 class MainWindow;
@@ -19,6 +22,10 @@ public:
 private:
 	Ui::MainWindow *ui;
 	QGraphicsScene *scene;
+
+	// QWidget interface
+protected:
+	void keyPressEvent(QKeyEvent *event);
 };
 
 #endif // MAINWINDOW_H
