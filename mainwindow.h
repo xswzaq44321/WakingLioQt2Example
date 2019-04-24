@@ -6,6 +6,11 @@
 #include <QGraphicsItem>
 #include <QKeyEvent>
 #include <QDebug>
+#include <QVector>
+#include <QTimer>
+
+#include <cstdlib>
+#include <ctime>
 
 namespace Ui {
 class MainWindow;
@@ -22,6 +27,8 @@ public:
 private:
 	Ui::MainWindow *ui;
 	QGraphicsScene *scene;
+	QVector<QGraphicsItem*> items;
+	QTimer timer;
 
 	// QWidget interface
 protected:

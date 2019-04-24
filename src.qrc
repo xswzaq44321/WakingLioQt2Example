@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/img">
+        <file alias="pikachu_gasp">resources/pikachu gasp.jpg</file>
+    </qresource>
+</RCC>
