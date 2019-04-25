@@ -1,7 +1,6 @@
 <RCC>
     <qresource prefix="/img">
         <file>resources/antman.png</file>
-        <file>resources/thanus_after.png</file>
-        <file>resources/thanus_before.png</file>
+        <file>resources/purple daisy.png</file>
     </qresource>
 </RCC>

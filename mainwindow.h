@@ -5,6 +5,7 @@
 #include <QGraphicsScene>
 #include <QGraphicsPixmapItem>
 #include <QTimer>
+#include <QTextCodec>
 
 #include "myscene.h"
 
@@ -20,16 +21,13 @@ public:
 	explicit MainWindow(QWidget *parent = nullptr);
 	~MainWindow();
 
-private slots:
-	void on_pushButton_clicked();
-
 private:
 	Ui::MainWindow *ui;
 	MyScene *scene;
 	QTimer timer;
 
 	QGraphicsPixmapItem *antman;
-	QGraphicsPixmapItem *thanus[2];
+	QGraphicsPixmapItem *daisy;
 };
 
 #endif // MAINWINDOW_H

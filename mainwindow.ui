@@ -24,7 +24,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -35,12 +35,18 @@
     </property>
     <property name="font">
      <font>
-      <family>Impact</family>
-      <pointsize>20</pointsize>
+      <family>華康竹風體W4(P)</family>
+      <pointsize>18</pointsize>
      </font>
     </property>
     <property name="text">
-     <string>BLOW!</string>
+     <string>TextLabel</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
   </widget>
