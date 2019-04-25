@@ -3,6 +3,10 @@
 
 #include <QMainWindow>
 #include <QGraphicsScene>
+#include <QGraphicsPixmapItem>
+#include <QTimer>
+
+#include "myscene.h"
 
 namespace Ui {
 class MainWindow;
@@ -16,9 +20,16 @@ public:
 	explicit MainWindow(QWidget *parent = nullptr);
 	~MainWindow();
 
+private slots:
+	void on_pushButton_clicked();
+
 private:
 	Ui::MainWindow *ui;
-	QGraphicsScene *scene;
+	MyScene *scene;
+	QTimer timer;
+
+	QGraphicsPixmapItem *antman;
+	QGraphicsPixmapItem *thanus[2];
 };
 
 #endif // MAINWINDOW_H
